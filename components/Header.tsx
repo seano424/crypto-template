@@ -3,6 +3,7 @@ import { dropdownList } from 'constants/dropdownList'
 import Link from 'next/link'
 import Logo from '../public/svgs/logo.svg'
 import Hamburger from '../public/svgs/hamburger.svg'
+import { MenuIcon } from '@heroicons/react/solid'
 
 interface HeaderProps {
   sitename: string
@@ -12,7 +13,7 @@ export default function Header(props: HeaderProps) {
   const { sitename = 'ONJUNO' } = props
 
   return (
-    <nav className="flex justify-between p-8 w-full lg:px-24">
+    <nav className="flex justify-between p-5 w-full lg:px-24">
       <ul className="flex items-center space-x-4">
         <Link href="/">
           <a className="flex space-x-2 lg:text-3xl font-bold">
@@ -26,16 +27,14 @@ export default function Header(props: HeaderProps) {
       </ul>
       <ul className="flex items-center space-x-4">
         <li className="hidden lg:flex">
-          <button className="button text-indigo-600 bg-white px-8">Login</button>
-        </li>
-        <li>
-          <button className="button">
-            Create Account
+          <button className="button text-indigo-600 bg-white px-8">
+            Login
           </button>
         </li>
-        <svg className='h-8 w-8 lg:hidden'>
-          <Hamburger className="text-teal-100" />
-        </svg>
+        <li>
+          <button className="button">Create Account</button>
+        </li>
+        <MenuIcon className="w-8" />
       </ul>
     </nav>
   )

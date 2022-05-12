@@ -1,11 +1,11 @@
-import Star from '@/svgs/star.svg'
+import { StarIcon } from '@heroicons/react/solid'
 
 export default function Hero() {
   return (
-    <section className="bg-cover bg-center min-h-[800px] relative flex flex-col-reverse lg:flex-col">
+    <section className="bg-cover bg-center min-h-[800px] relative flex flex-col-reverse lg:flex-col pt-10">
       <div className="lg:absolute inset-0">
         <img
-          className='h-full w-full'
+          className="h-full w-full"
           src="https://cdn.onjuno.com/crypto-landing/landing-page-hero-1%402x.png"
           alt="Landing Page Image"
         />
@@ -48,30 +48,16 @@ export default function Hero() {
         <div className="flex gap-2 justify-center lg:justify-start items-center">
           <p>Excellent</p>
           <div className="flex gap-1 items-center">
-            <svg className="w-6 h-6 bg-green-500 p-1 text-white">
-              <Star />
-            </svg>
-            <svg className="w-6 h-6 bg-green-500 p-1 text-white">
-              <Star />
-            </svg>
-            <svg className="w-6 h-6 bg-green-500 p-1 text-white">
-              <Star />
-            </svg>
-            <svg className="w-6 h-6 bg-green-500 p-1 text-white">
-              <Star />
-            </svg>
-            <div className="w-6 h-6 bg-green-500 relative">
+            <StarIcon className="w-4 bg-green-500" />
+            <StarIcon className="w-4 bg-green-500" />
+            <StarIcon className="w-4 bg-green-500" />
+            <StarIcon className="w-4 bg-green-500" />
+            <div className="relative">
               <div className="absolute top-0 bottom-0 right-0 left-1/2 bg-white"></div>
-              <svg className="w-6 h-6 bg-green-500 p-1 text-white">
-                <Star />
-              </svg>
+              <StarIcon className="w-4 bg-green-500" />
             </div>
-            <div className="flex items-center">
-              <svg className="w-6 h-6 text-green-500 p-1">
-                <Star />
-              </svg>
-              <p className="text-sm">Trustpilot</p>
-            </div>
+            <StarIcon className="w-4 text-green-500" />
+            <p className="text-sm">Trustpilot</p>
           </div>
         </div>
       </div>
