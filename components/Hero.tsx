@@ -5,8 +5,7 @@ export default function Hero() {
     <section className="bg-cover bg-center min-h-[800px] relative flex flex-col-reverse lg:flex-col">
       <div className="lg:absolute inset-0">
         <img
-          height={300}
-          width={1400}
+          className='h-full w-full'
           src="https://cdn.onjuno.com/crypto-landing/landing-page-hero-1%402x.png"
           alt="Landing Page Image"
         />
