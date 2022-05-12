@@ -26,16 +26,16 @@ export default function Header(props: HeaderProps) {
       </ul>
       <ul className="flex items-center space-x-4">
         <li className="hidden lg:flex">
-          <button className="button">Login</button>
+          <button className="button text-indigo-600 bg-white px-8">Login</button>
         </li>
         <li>
           <button className="button">
             Create Account
           </button>
         </li>
-        <li>
+        <svg className='h-6 w-6 lg:hidden'>
           <Hamburger />
-        </li>
+        </svg>
       </ul>
     </nav>
   )

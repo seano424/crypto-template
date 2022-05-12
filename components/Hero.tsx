@@ -34,7 +34,7 @@ export default function Hero() {
               </svg>
             </span>
             <input
-              className="button bg-white py-6 pl-20 text-black placeholder:text-black w-full text-xl font-light focus:ring-0 outline-none"
+              className="button bg-white py-6 pl-20 text-black placeholder:text-black w-full mr-3 text-xl font-light focus:ring-0 outline-none"
               type="text"
               placeholder="Enter Email Address"
             />
@@ -43,7 +43,7 @@ export default function Hero() {
             Create Account
           </button>
         </div>
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2 justify-center lg:justify-start items-center">
           <p>Excellent</p>
           <div className="flex gap-1 items-center">
             <svg className="w-6 h-6 bg-green-500 p-1 text-white">
