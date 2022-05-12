@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Banner from '../Banners/Banner'
 
 const customers = [
@@ -41,7 +42,7 @@ export default function CtaCustomers() {
         {customers.map((customer, i) => (
           <div key={i} className="card p-8 flex flex-col gap-3">
             <div className="flex items-center gap-3">
-              <img
+              <Image
                 height={50}
                 width={50}
                 src={customer.image}

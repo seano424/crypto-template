@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -95,20 +97,20 @@ export default function Footer() {
         Footer
       </h2>
       <div className="flex justify-between items-center mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-56 border-b">
-        <img
+        <Image
           height={50}
           width={150}
           src="https://cdn.onjuno.com/on-juno%402x.png"
           alt="Logo Image"
         />
         <div className="flex">
-          <img
+          <Image
             height={50}
             width={150}
             src="https://cdn.onjuno.com/intern/Download_on_the_App_Store_Badge_US-UK_RGB_blk_0929%403x.png"
             alt="Apple Store"
           />
-          <img
+          <Image
             height={50}
             width={150}
             src="https://cdn.onjuno.com/intern/google-play-badge+1%403x.png"

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 interface Props {
   size?: string
   label?: string
@@ -25,10 +26,12 @@ export default function CtaCardWithLabel(props:Props) {
         <p>10% back on crypto spends</p>
       </div>
       <div>
-        <img
+        <Image
           src="https://cdn.onjuno.com/crypto-landing/crypto-power-image-1%402x.png"
           alt="power image"
           loading="lazy"
+          height={500}
+          width={800}
         />
       </div>
     </div>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function CtaLargeCreateCheckingAccount() {
   return (
     <section>
@@ -9,7 +11,7 @@ export default function CtaLargeCreateCheckingAccount() {
             comes with a metal card.
           </p>
           <div className="flex items-center gap-3">
-            <img
+            <Image
               className="shadow-lg rounded"
               src="https://chart.googleapis.com/chart?cht=qr&chl=https://onjuno.onelink.me/1WrP/homepage&chs=275&margin=0"
               alt="QR Code"
@@ -23,11 +25,13 @@ export default function CtaLargeCreateCheckingAccount() {
             </p>
           </div>
         </div>
-        <img
+        <Image
           className="object-cover h-[600px]"
           src="https://cdn.onjuno.com/mobile-app-1%402x.png"
           alt="Create Account CTA Image"
           loading="lazy"
+          height={600}
+          width={600}
         />
       </div>
     </section>

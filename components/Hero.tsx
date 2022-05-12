@@ -1,13 +1,16 @@
+import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/solid'
 
 export default function Hero() {
   return (
     <section className="bg-cover bg-center min-h-[800px] relative flex flex-col-reverse lg:flex-col pt-10">
       <div className="lg:absolute inset-0">
-        <img
+        <Image
           className="h-full w-full"
           src="https://cdn.onjuno.com/crypto-landing/landing-page-hero-1%402x.png"
           alt="Landing Page Image"
+          height={1000}
+          width={1800}
         />
       </div>
       <div className="flex flex-col gap-5 text-center lg:text-left w-11/12 md:w-[500px] lg:w-6/12 mx-auto lg:mr-0 lg:ml-24">

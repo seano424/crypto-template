@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Banner from '../Banners/Banner'
 
 const ctas = [
@@ -28,11 +29,13 @@ export default function CtaGridWithImages() {
       <div className="grid gap-8 md:gap-0 md:grid-cols-3 lg:mx-24">
         {ctas.map((cta) => (
           <div key={cta.image} className="flex flex-col items-center gap-3">
-            <img
+            <Image
               className=" flex-1 h-40 w-40"
               src={cta.image}
               alt="Crypto Spends Icon"
               loading="lazy"
+              height={150}
+              width={150}
             />
             <p className="lg:max-w-xs mx-auto text-center font-light text-lg lg:text-2xl">
               {cta.text}
@@ -47,7 +50,7 @@ export default function CtaGridWithImages() {
         </p>
       </div>
       <div>
-        <img
+        <Image
           src="https://cdn.onjuno.com/crypto-landing/crypto-spends-bg%402x.png"
           alt="Bottom CTA Background Image"
           loading="lazy"

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Banner from "../Banners/Banner"
 
 const ctas = [
@@ -56,7 +57,12 @@ export default function CtaGridWithMasonry() {
                 {cta.subheading}
               </p>
             </div>
-            <img src={cta.image} alt="CTA Image" />
+            <Image 
+              src={cta.image} 
+              alt="CTA Image"
+              height={200}
+              width={400}
+            />
           </div>
         ))}
       </div>
