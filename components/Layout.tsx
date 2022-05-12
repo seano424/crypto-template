@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import Head from 'next/head'
-import Header from './Header'
+import Navbar from './NavBar'
 import Footer from './Footer'
 interface Props {
   children: ReactNode
@@ -20,7 +20,7 @@ const Layout = ({ children, title = 'Example' }: Props) => {
           />
         </Head>
 
-        <Header sitename="ONJUNO" />
+        <Navbar sitename="ONJUNO" />
         <main className="flex-1 w-full h-full">{children}</main>
       </div>
       <Footer />

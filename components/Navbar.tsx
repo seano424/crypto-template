@@ -2,14 +2,13 @@ import Dropdown from './Dropdown'
 import { dropdownList } from 'constants/dropdownList'
 import Link from 'next/link'
 import Logo from '../public/svgs/logo.svg'
-import Hamburger from '../public/svgs/hamburger.svg'
 import { MenuIcon } from '@heroicons/react/solid'
 
 interface HeaderProps {
   sitename: string
 }
 
-export default function Header(props: HeaderProps) {
+export default function Navbar(props: HeaderProps) {
   const { sitename = 'ONJUNO' } = props
 
   return (
