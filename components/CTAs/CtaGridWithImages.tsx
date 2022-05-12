@@ -21,7 +21,10 @@ export default function CtaGridWithImages() {
     <section>
       <div className="grid gap-8 md:gap-0 md:grid-cols-3 lg:mx-24">
         {ctas.map((cta) => (
-          <div className="flex flex-col items-center gap-3">
+          <div 
+            key={cta.image} 
+            className="flex flex-col items-center gap-3"
+          >
             <img
               className=" flex-1 h-40 w-40"
               src={cta.image}

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import Head from 'next/head'
 import Header from './Header'
-
+import Footer from './Footer'
 interface Props {
   children: ReactNode
   title: string
@@ -9,7 +9,7 @@ interface Props {
 
 const Layout = ({ children, title = 'Example' }: Props) => {
   return (
-    <div className='bg-black text-white'>
+    <div className="bg-black text-white">
       <div className="flex flex-col min-h-screen max-w-[1440px] mx-auto">
         <Head>
           <title>{title}</title>
@@ -23,6 +23,7 @@ const Layout = ({ children, title = 'Example' }: Props) => {
         <Header sitename="ONJUNO" />
         <main className="flex-1 w-full h-full">{children}</main>
       </div>
+      <Footer />
     </div>
   )
 }
