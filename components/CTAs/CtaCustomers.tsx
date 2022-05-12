@@ -1,3 +1,5 @@
+import Banner from '../Banners/Banner'
+
 const customers = [
   {
     image: 'https://cdn.onjuno.com/crypto-landing/testimonial-6%402x.png',
@@ -30,8 +32,12 @@ const customers = [
 
 export default function CtaCustomers() {
   return (
-    <section className="mb-10">
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-10">
+    <section>
+      <Banner
+        header="Our Customers Love Us"
+        subheader="But don't just take our word for it"
+      />
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-10 mb-10">
         {customers.map((customer, i) => (
           <div key={i} className="card p-8 flex flex-col gap-3">
             <div className="flex items-center gap-3">
