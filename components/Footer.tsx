@@ -1,6 +1,3 @@
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import Logo from '../public/svgs/logo.svg'
-
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
