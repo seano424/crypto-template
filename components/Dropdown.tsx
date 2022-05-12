@@ -26,11 +26,11 @@ export default function Dropdown(props: Props) {
   useOnClickOutside(dropdownRef, () => setIsOpen(false))
 
   return (
-    <li
+    <div
       onClick={handleClick}
       ref={dropdownRef}
       key={i}
-      className="flex-col select-none hidden lg:flex"
+      className="flex-col select-none hidden lg:flex z-50"
     >
       <div className="flex items-center space-x-1 cursor-pointer">
         <span>{list.title}</span>
@@ -39,13 +39,18 @@ export default function Dropdown(props: Props) {
         className={`absolute transition-all duration-500 ease-linear top-[5rem] w-40 rounded bg-white text-black p-4 
         ${isOpen ? 'opacity-100' : 'opacity-0 hidden'}`}
       >
-        <ul className='grid gap-3 text-gray-600'>
+        <ul className="grid gap-3 text-gray-600">
           {list.listItems.map((item, i) => (
-            <li key={i}>{item.title}</li>
+            <li
+              className="text-gray-600 hover:text-gray-900 cursor-pointer"
+              key={i}
+            >
+              {item.title}
+            </li>
           ))}
         </ul>
       </div>
-    </li>
+    </div>
   )
 }
 

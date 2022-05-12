@@ -13,7 +13,7 @@ import CtaLargeCreateCheckingAccount from '@/components/CTAs/CtaLargeCreateCheck
 
 const Home: NextPage = () => {
   return (
-    <Layout title="Crypto Clone">
+    <Layout title="OnJuno Clone">
       <main className="max-w-[1440px] mx-auto">
         <Hero />
         <AsFeaturedIn />
