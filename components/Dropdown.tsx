@@ -1,11 +1,14 @@
 import { useRef, useState } from 'react'
 import useOnClickOutside from '../hooks/useOnClickOutside'
+import Link from 'next/link'
+import { ChevronDownIcon } from '@heroicons/react/solid'
 
 interface Props {
   list: {
     title: string
     listItems: {
       title: string
+      route: string
     }[]
   }
   i: number
@@ -34,6 +37,7 @@ export default function Dropdown(props: Props) {
     >
       <div className="flex items-center space-x-1 cursor-pointer">
         <span>{list.title}</span>
+        <ChevronDownIcon className='w-5'/>
       </div>
       <div
         className={`absolute transition-all duration-500 ease-linear top-[5rem] w-40 rounded bg-white text-black p-4 
@@ -41,12 +45,11 @@ export default function Dropdown(props: Props) {
       >
         <ul className="grid gap-3 text-gray-600">
           {list.listItems.map((item, i) => (
-            <li
-              className="text-gray-600 hover:text-gray-900 cursor-pointer"
-              key={i}
-            >
-              {item.title}
-            </li>
+            <Link key={i} href={item.route}>
+              <a className="text-gray-600 hover:text-gray-900 cursor-pointer">
+                {item.title}
+              </a>
+            </Link>
           ))}
         </ul>
       </div>

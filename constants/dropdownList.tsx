@@ -2,19 +2,19 @@ export const dropdownList = [
   {
     title: 'Company',
     listItems: [
-      { title: 'About' },
-      { title: 'Newsroom' },
-      { title: 'Careers' },
-      { title: 'Legal' },
-      { title: 'Community' },
+      { title: 'About', route: '/about' },
+      { title: 'Newsroom', route: '/' },
+      { title: 'Careers', route: '/' },
+      { title: 'Legal', route: '/' },
+      { title: 'Community', route: '/' },
     ],
   },
   {
     title: 'Learn',
     listItems: [
-      { title: 'Blog' },
-      { title: 'Guides' },
-      { title: 'Help Center' },
+      { title: 'Blog', route: '/' },
+      { title: 'Guides', route: '/' },
+      { title: 'Help Center', route: '/' },
     ],
   },
 ]

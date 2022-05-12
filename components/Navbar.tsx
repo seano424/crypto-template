@@ -12,10 +12,10 @@ export default function Navbar(props: HeaderProps) {
   const { sitename = 'ONJUNO' } = props
 
   return (
-    <nav className="flex justify-between p-5 w-full lg:px-24">
-      <ul className="flex items-center space-x-4">
+    <nav className="flex justify-between p-5 lg:p-7 w-full lg:px-56">
+      <ul className="flex items-center gap-10">
         <Link href="/">
-          <a className="flex space-x-2 lg:text-3xl font-bold">
+          <a className="flex space-x-2 lg:text-3xl font-bold pr-8">
             <Logo />
             <span className="hidden lg:flex">{sitename}</span>
           </a>
