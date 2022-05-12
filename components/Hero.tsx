@@ -2,12 +2,15 @@ import Star from '@/svgs/star.svg'
 
 export default function Hero() {
   return (
-    <section
-      className="bg-cover bg-center min-h-[800px]"
-      style={{
-        backgroundImage: `url('https://cdn.onjuno.com/crypto-landing/landing-page-hero-1%402x.png')`,
-      }}
-    >
+    <section className="bg-cover bg-center min-h-[800px] relative flex flex-col-reverse lg:flex-col">
+      <div className="lg:absolute inset-0">
+        <img
+          height={300}
+          width={1400}
+          src="https://cdn.onjuno.com/crypto-landing/landing-page-hero-1%402x.png"
+          alt="Landing Page Image"
+        />
+      </div>
       <div className="flex flex-col gap-5 text-center lg:text-left w-11/12 md:w-[500px] lg:w-6/12 mx-auto lg:mr-0 lg:ml-24">
         <h1 className="text-6xl lg:text-8xl font-black lg:px-0 lg:w-80">
           Some Awesome Website!
@@ -64,12 +67,11 @@ export default function Hero() {
                 <Star />
               </svg>
             </div>
-            <div className='flex items-center'>
+            <div className="flex items-center">
               <svg className="w-6 h-6 text-green-500 p-1">
                 <Star />
               </svg>
-              <p className='text-sm'>Trustpilot</p>
-
+              <p className="text-sm">Trustpilot</p>
             </div>
           </div>
         </div>

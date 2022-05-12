@@ -33,8 +33,8 @@ export default function Header(props: HeaderProps) {
             Create Account
           </button>
         </li>
-        <svg className='h-6 w-6 lg:hidden'>
-          <Hamburger />
+        <svg className='h-8 w-8 lg:hidden'>
+          <Hamburger className="text-teal-100" />
         </svg>
       </ul>
     </nav>
