@@ -5,11 +5,13 @@ import Footer from './Footer'
 interface Props {
   children: ReactNode
   title: string
+  colorScheme: 'dark' | 'light'
 }
-
-const Layout = ({ children, title = 'Example' }: Props) => {
+const Layout = (props: Props) => {
+  const { children, title = 'Example', colorScheme } = props
+  const dark = colorScheme === 'dark'
   return (
-    <div className="bg-black text-white">
+    <div className={`${dark ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <div className="flex flex-col min-h-screen">
         <Head>
           <title>{title}</title>
@@ -20,7 +22,7 @@ const Layout = ({ children, title = 'Example' }: Props) => {
           />
         </Head>
 
-        <Navbar sitename="ONJUNO" />
+        <Navbar sitename="ONJUNO" colorScheme={colorScheme} />
         <main className="flex-1 w-full h-full">{children}</main>
       </div>
       <Footer />
