@@ -10,12 +10,12 @@ export default function CtaSmallCreateCheckingAccount() {
           <div className="flex items-center relative">
             <MailIcon className="absolute left-5 w-6 text-black" />
             <input
-              className="button bg-white py-6 pl-16 text-gray-800 placeholder:text-black w-full mr-3 text-base font-light focus:ring-0 outline-none"
+              className="button bg-white py-6 pl-16 text-gray-800 placeholder:text-black w-full xl:mr-3 text-base font-light focus:ring-0 outline-none"
               type="text"
               placeholder="Enter Email Address"
             />
           </div>
-          <button className="button py-6 text-xl">Create free account</button>
+          <button className="button py-6">Create free account</button>
         </div>
       </div>
     </section>
