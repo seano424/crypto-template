@@ -20,7 +20,7 @@ export default function Banner(props: Props) {
 
   return (
     <section>
-      <div className="text-center pt-20 pb-10 flex flex-col items-center">
+      <div className="text-center pt-5 sm:pt-20 pb-10 flex flex-col items-center px-6 sm:px-0">
         <h4 className="max-w-4xl md:text-6xl mx-auto">{header}</h4>
         {subheader && (
           <p className="max-w-3xl py-5 mx-auto leading-relaxed tracking-wide lg:text-2xl">

@@ -96,7 +96,7 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="flex justify-between items-center mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-56 border-b">
+      <div className="hidden sm:flex justify-between items-center mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-56 border-b">
         <Image
           height={50}
           width={150}

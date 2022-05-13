@@ -1,8 +1,8 @@
 @layer base {
   h1, h2, h3, h4 {
-    @apply text-5xl lg:text-7xl font-bold;
+    @apply text-3xl sm:text-5xl lg:text-7xl font-bold;
   }
   p {
-    @apply text-gray-300 text-xl;
+    @apply text-gray-300 sm:text-xl;
   }
 }
