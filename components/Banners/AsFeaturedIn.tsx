@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 export default function AsFeaturedIn() {
   return (
@@ -6,42 +6,52 @@ export default function AsFeaturedIn() {
       <p className="uppercase text-center text-gray-400 tracking-widest md:text-xl">
         As featured in
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-x-10 gap-y-4 w-full">
-        <Image
-          className="flex justify-center w-auto h-10 object-contain"
-          height={40}
-          width={138}
-          alt="Fortune"
-          src="/images/businesses/fortune.png"
-        />
-        <Image
-          className="flex justify-center w-auto h-10 object-contain"
-          height={40}
-          width={138}
-          src="/images/businesses/banker.png"
-          alt="American Banker"
-        />
-        <Image
-          className="flex justify-center w-auto h-10 object-contain"
-          height={40}
-          width={138}
-          src="/images/businesses/techcrunch.png"
-          alt="American techcrunch"
-        />
-        <Image
-          className="flex justify-center w-auto h-10 object-contain"
-          height={40}
-          width={138}
-          src="/images/businesses/coindesk.png"
-          alt="American coindesk"
-        />
-        <Image
-          className="flex justify-center w-full h-10 object-contain col-span-2 md:col-span-1"
-          height={40}
-          width={138}
-          src="/images/businesses/forbes.png"
-          alt="Forbes"
-        />
+      <div className="flex flex-wrap justify-center gap-x-10 gap-y-4 w-full">
+        <div>
+          <Image
+            className="flex justify-center object-contain"
+            height={40}
+            width={100}
+            alt="Fortune"
+            src="/images/businesses/fortune.png"
+          />
+        </div>
+        <div>
+          <Image
+            className="flex justify-center object-contain"
+            height={40}
+            width={100}
+            src="/images/businesses/banker.png"
+            alt="American Banker"
+          />
+        </div>
+        <div>
+          <Image
+            className="flex justify-center object-contain"
+            height={40}
+            width={100}
+            src="/images/businesses/techcrunch.png"
+            alt="American techcrunch"
+          />
+        </div>
+        <div>
+          <Image
+            className="flex justify-center object-contain"
+            height={40}
+            width={100}
+            src="/images/businesses/coindesk.png"
+            alt="American coindesk"
+          />
+        </div>
+        <div>
+          <Image
+            className="flex justify-center w-full object-contain"
+            height={40}
+            width={100}
+            src="/images/businesses/forbes.png"
+            alt="Forbes"
+          />
+        </div>
       </div>
     </section>
   )

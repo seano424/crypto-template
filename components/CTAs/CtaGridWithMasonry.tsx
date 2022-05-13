@@ -51,7 +51,7 @@ export default function CtaGridWithMasonry() {
               cta.large ? 'md:col-span-4' : 'md:col-span-2'
             }`}
           >
-            <div className="flex flex-col gap-3 px-3 pt-5">
+            <div className="flex flex-col gap-3 p-5">
               <h4 className="text-2xl tracking-wide">{cta.heading}</h4>
               <p className="font-light text-gray-400 text-lg leading-relaxed">
                 {cta.subheading}
