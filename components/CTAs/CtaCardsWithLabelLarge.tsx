@@ -1,7 +1,7 @@
 import Banner from '../Banners/Banner'
 import CtaCardWithLabel from './CtaCardWithLabel'
 
-export default function HomeCtasWithLabels() {
+export default function CtaCardsWithLabelLarge() {
   return (
     <section>
       <Banner header="The power of crypto, now in your checking account" />

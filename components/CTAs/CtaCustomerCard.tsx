@@ -31,7 +31,7 @@ const customers = [
   },
 ]
 
-export default function CtaCustomers() {
+export default function CtaCustomerCard() {
   return (
     <section>
       <Banner

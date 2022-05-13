@@ -39,7 +39,7 @@ const ctas = [
   },
 ]
 
-export default function CtaGridWithMasonry() {
+export default function CtaMasonryGrid() {
   return (
     <section>
       <Banner header="A complete bank replacement" />

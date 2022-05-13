@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Banner from '../Banners/Banner'
 
-export default function CtaJunoverse() {
+export default function CtaJoinCommunity() {
   return (
     <section>
       <Banner

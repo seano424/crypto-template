@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Layout from '@/components/Layout'
 
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <Layout title="OnJuno Clone">
       HEY I AM THE ABOUT PAGE!
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default About

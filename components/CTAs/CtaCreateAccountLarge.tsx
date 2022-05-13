@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function CtaLargeCreateCheckingAccount() {
+export default function CtaCreateAccountLarge() {
   return (
     <section>
       <div className="hidden xl:flex bg-gray-50 pt-20 text-black relative px-52">

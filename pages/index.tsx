@@ -2,14 +2,14 @@ import type { NextPage } from 'next'
 import Layout from '@/components/Layout'
 import Hero from '@/components/Hero'
 import AsFeaturedIn from '@/components/Banners/AsFeaturedIn'
-import HomeCtasWithLabels from '@/components/CTAs/HomeCtasWithLabels'
+import CtaCardsWithLabelLarge from '@/components/CTAs/CtaCardsWithLabelLarge'
 import CtaGridWithImages from '@/components/CTAs/CtaGridWithImages'
-import CtaGridWithMasonry from '@/components/CTAs/CtaGridWithMasonry'
-import CtaCustomers from '@/components/CTAs/CtaCustomers'
-import CtaJunoverse from '@/components/CTAs/CtaJunoverse'
+import CtaMasonryGrid from '@/components/CTAs/CtaMasonryGrid'
+import CtaCustomerCard from '@/components/CTAs/CtaCustomerCard'
+import CtaJoinCommunity from '@/components/CTAs/CtaJoinCommunity'
 import CtaNumbers from '@/components/CTAs/CtaNumbers'
-import CtaSmallCreateCheckingAccount from '@/components/CTAs/CtaSmallCreateCheckingAccount'
-import CtaLargeCreateCheckingAccount from '@/components/CTAs/CtaLargeCreateCheckingAccount'
+import CtaCreateAccountSmall from '@/components/CTAs/CtaCreateAccountSmall'
+import CtaCreateAccountLarge from '@/components/CTAs/CtaCreateAccountLarge'
 
 const Home: NextPage = () => {
   return (
@@ -17,15 +17,15 @@ const Home: NextPage = () => {
       <main className="max-w-[1440px] mx-auto">
         <Hero />
         <AsFeaturedIn />
-        <HomeCtasWithLabels />
+        <CtaCardsWithLabelLarge />
         <CtaGridWithImages />
-        <CtaGridWithMasonry />
-        <CtaCustomers />
-        <CtaJunoverse />
+        <CtaMasonryGrid />
+        <CtaCustomerCard />
+        <CtaJoinCommunity />
       </main>
       <CtaNumbers />
-      <CtaSmallCreateCheckingAccount />
-      <CtaLargeCreateCheckingAccount />
+      <CtaCreateAccountSmall />
+      <CtaCreateAccountLarge />
     </Layout>
   )
 }

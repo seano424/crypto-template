@@ -1,6 +1,6 @@
 import { MailIcon } from '@heroicons/react/outline'
 
-export default function CtaSmallCreateCheckingAccount() {
+export default function CtaCreateAccountSmall() {
   return (
     <section>
       <div className="xl:hidden bg-gray-50 py-20 text-black flex flex-col items-center justify-center text-center">
