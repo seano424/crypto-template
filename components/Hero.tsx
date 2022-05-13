@@ -3,7 +3,7 @@ import { StarIcon } from '@heroicons/react/solid'
 
 export default function Hero() {
   return (
-    <section className="bg-cover bg-center min-h-[800px] relative flex flex-col-reverse lg:flex-col pt-10">
+    <section className="bg-cover bg-center sm:min-h-[800px] relative flex flex-col-reverse lg:flex-col pt-10">
       <div className="lg:absolute inset-0">
         <Image
           className="h-full w-full"
