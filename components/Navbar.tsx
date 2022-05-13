@@ -31,7 +31,7 @@ export default function Navbar(props: HeaderProps) {
           </button>
         </li>
         <li>
-          <button className="button">Create Account</button>
+          <button className="button text-sm md:text-base">Create Account</button>
         </li>
         <MenuIcon className="w-8 lg:hidden" />
       </ul>
