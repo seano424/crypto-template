@@ -52,13 +52,13 @@ export default function Modal(props: Props) {
           </nav>
           <article className="py-10 grid gap-4">
             {dropdownList.map((list, i) => (
-              <div>
+              <div key={i}>
                 <div
                   onClick={() => handleDropdown(i)}
                   className="flex items-center pb-3"
                 >
                   <p>{list.title}</p>
-                  <ChevronDownIcon className="w-5 cursor-pointer" />
+                  <ChevronDownIcon className="w-4 cursor-pointer" />
                 </div>
                 {state.open && state.dropdownToOpen === i && (
                   <div className="pl-5 grid gap-3">
