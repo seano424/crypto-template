@@ -98,8 +98,9 @@ export default function Footer() {
       </h2>
       <div className="hidden sm:flex justify-between items-center mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-56 border-b">
         <Image
-          height={50}
-          width={150}
+          className='object-cover'
+          height={30}
+          width={120}
           src="https://cdn.onjuno.com/on-juno%402x.png"
           alt="Logo Image"
         />
