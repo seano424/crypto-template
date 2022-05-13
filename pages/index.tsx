@@ -1,31 +1,31 @@
 import type { NextPage } from 'next'
+import { motion } from 'framer-motion'
+
 import Layout from '@/components/Layout'
-import Hero from '@/components/Hero'
-import AsFeaturedIn from '@/components/Banners/AsFeaturedIn'
-import CtaCardsWithLabelLarge from '@/components/CTAs/CtaCardsWithLabelLarge'
-import CtaGridWithImages from '@/components/CTAs/CtaGridWithImages'
-import CtaMasonryGrid from '@/components/CTAs/CtaMasonryGrid'
-import CtaCustomerCard from '@/components/CTAs/CtaCustomerCard'
-import CtaJoinCommunity from '@/components/CTAs/CtaJoinCommunity'
-import CtaNumbers from '@/components/CTAs/CtaNumbers'
-import CtaCreateAccountSmall from '@/components/CTAs/CtaCreateAccountSmall'
-import CtaCreateAccountLarge from '@/components/CTAs/CtaCreateAccountLarge'
+import MainContent from '@/components/HomePage/MainContent'
+import BottomContent from '@/components/HomePage/BottomContent'
 
 const Home: NextPage = () => {
   return (
-    <Layout title="OnJuno Clone">
-      <main className="max-w-[1440px] mx-auto">
-        <Hero />
-        <AsFeaturedIn />
-        <CtaCardsWithLabelLarge />
-        <CtaGridWithImages />
-        <CtaMasonryGrid />
-        <CtaCustomerCard />
-        <CtaJoinCommunity />
-      </main>
-      <CtaNumbers />
-      <CtaCreateAccountSmall />
-      <CtaCreateAccountLarge />
+    <Layout colorScheme='dark' title="OnJuno Clone">
+      <motion.main
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            opacity: 0,
+          },
+          visible: {
+            opacity: 1,
+            transition: {
+              delay: 0.2,
+            },
+          },
+        }}
+      >
+        <MainContent />
+        <BottomContent />
+      </motion.main>
     </Layout>
   )
 }
