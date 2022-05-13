@@ -55,7 +55,7 @@ export default function Modal(props: Props) {
               <div key={i}>
                 <div
                   onClick={() => handleDropdown(i)}
-                  className="flex items-center pb-3"
+                  className="flex items-center pb-3 cursor-pointer select-none"
                 >
                   <p>{list.title}</p>
                   <ChevronDownIcon className="w-4 cursor-pointer" />
