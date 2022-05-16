@@ -6,10 +6,15 @@ import Hero from '@/components/AboutPage/Hero'
 import Banner from '@/components/AboutPage/AboutBanner'
 import TeamMembers from '@/components/AboutPage/TeamMembers'
 import Values from '@/components/AboutPage/Values'
+import WorkingAtOnJuno from '@/components/AboutPage/WorkingAtOnJuno'
 
 const About: NextPage = () => {
   return (
-    <Layout title="OnJuno Clone" colorScheme="light">
+    <Layout 
+      title="OnJuno Clone" 
+      colorScheme="light" 
+      paddingTop={true}
+    >
       <motion.main
         initial="hidden"
         animate="visible"
@@ -25,15 +30,14 @@ const About: NextPage = () => {
           },
         }}
       >
-        <main className="pt-20">
-          <Hero />
-          <Banner
-            heading="Our Team"
-            subheading="A collective of engineers, designers, and product thinkers driven by the opportunity to create fairer financial systems"
-          />
-          <TeamMembers />
-          <Values />
-        </main>
+        <Hero />
+        <Banner
+          heading="Our Team"
+          subheading="A collective of engineers, designers, and product thinkers driven by the opportunity to create fairer financial systems"
+        />
+        <TeamMembers />
+        <Values />
+        <WorkingAtOnJuno />
       </motion.main>
     </Layout>
   )

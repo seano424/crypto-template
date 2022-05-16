@@ -116,3 +116,26 @@ export const values = [
     name: 'Transparency'
   },
 ]
+
+export const workValues = [
+  {
+    icon: 'https://cdn.onjuno.com/About/work-1.svg',
+    heading: 'Learn from personal finance experts',
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/work-2.svg',
+    heading: 'Top-tier health benefits',
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/work-3.svg',
+    heading: 'Perks for professional development',
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/work-4.svg',
+    heading: 'Fitness credit in form of CultFit Vouchers',
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/work-5.svg',
+    heading: 'Team trips, outings, and hackathons',
+  },
+]

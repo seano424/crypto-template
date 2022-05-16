@@ -7,7 +7,10 @@ import BottomContent from '@/components/HomePage/BottomContent'
 
 const Home: NextPage = () => {
   return (
-    <Layout colorScheme='dark' title="OnJuno Clone">
+    <Layout 
+      colorScheme="dark" 
+      title="OnJuno Clone" 
+    >
       <motion.main
         initial="hidden"
         animate="visible"

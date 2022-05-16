@@ -6,9 +6,11 @@ interface Props {
   children: ReactNode
   title: string
   colorScheme: 'dark' | 'light'
+  paddingTop?: boolean
 }
 const Layout = (props: Props) => {
-  const { children, title = 'Example', colorScheme } = props
+  const { children, title, colorScheme, paddingTop } = props
+
   const dark = colorScheme === 'dark'
   return (
     <div className={`${dark ? 'bg-black text-white' : 'bg-white text-black'}`}>
@@ -23,7 +25,9 @@ const Layout = (props: Props) => {
         </Head>
 
         <Navbar sitename="ONJUNO" colorScheme={colorScheme} />
-        <main className="flex-1 w-full h-full">{children}</main>
+        <main className={`flex-1 w-full h-full ${paddingTop && 'pt-20'}`}>
+          {children}
+        </main>
       </div>
       <Footer />
     </div>
