@@ -1,4 +1,4 @@
-import Hero from '../Hero'
+import Hero from './Hero'
 import CtaCardsWithLabelLarge from '../CTAs/CtaCardsWithLabelLarge'
 import AsFeaturedIn from '../Banners/AsFeaturedIn'
 import CtaCustomerCard from '../CTAs/CtaCustomerCard'

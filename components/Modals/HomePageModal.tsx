@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { ChevronDownIcon, XIcon } from '@heroicons/react/solid'
-import Logo from '../public/svgs/logo.svg'
+import Logo from '../../public/svgs/logo.svg'
 
 interface Props {
   isModalOpen: boolean
@@ -13,19 +13,15 @@ interface Props {
       route: string
     }[]
   }[]
-  colorScheme: 'dark' | 'light'
   sitename: string
 }
 
-export default function Modal(props: Props) {
-  const { isModalOpen, handleModal, dropdownList, sitename, colorScheme } =
-    props
+export default function HomePageModal(props: Props) {
+  const { isModalOpen, handleModal, dropdownList, sitename } = props
   const [state, setState] = useState({
     dropdownToOpen: 0,
     open: false,
   })
-
-  const darkScheme = colorScheme === 'dark'
 
   function handleDropdown(i: number) {
     if (state.dropdownToOpen === i) {
@@ -52,7 +48,10 @@ export default function Modal(props: Props) {
                 <span className="hidden lg:flex">{sitename}</span>
               </a>
             </Link>
-            <XIcon onClick={handleModal} className={`w-8 cursor-pointer ${darkScheme ? '' : 'text-gray-400'}`} />
+            <XIcon
+              onClick={handleModal}
+              className="w-8 cursor-pointer"
+            />
           </nav>
           <article className="py-10 grid gap-4">
             {dropdownList.map((list, i) => (

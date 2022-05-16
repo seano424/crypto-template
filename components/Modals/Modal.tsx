@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { ChevronDownIcon, XIcon } from '@heroicons/react/solid'
-import Logo from '../public/svgs/logo.svg'
+import { ChevronDownIcon } from '@heroicons/react/solid'
 
 interface Props {
   isModalOpen: boolean
-  handleModal: any
   dropdownList: {
     title: string
     listItems: {
@@ -13,19 +11,14 @@ interface Props {
       route: string
     }[]
   }[]
-  colorScheme: 'dark' | 'light'
-  sitename: string
 }
 
 export default function Modal(props: Props) {
-  const { isModalOpen, handleModal, dropdownList, sitename, colorScheme } =
-    props
+  const { isModalOpen, dropdownList } = props
   const [state, setState] = useState({
     dropdownToOpen: 0,
     open: false,
   })
-
-  const darkScheme = colorScheme === 'dark'
 
   function handleDropdown(i: number) {
     if (state.dropdownToOpen === i) {
@@ -44,40 +37,47 @@ export default function Modal(props: Props) {
   return (
     <div>
       {isModalOpen && (
-        <div className="absolute inset-0 bg-black z-50 p-5 flex flex-col">
-          <nav className="flex justify-between items-center lg:p-7 w-full lg:px-56">
+        <div className="bg-white z-50 flex flex-col">
+          <article className="px-5 sm:pl-10 grid gap-5 sm:gap-1 text-gray-500">
             <Link href="/">
-              <a className="flex space-x-2 lg:text-3xl font-bold pr-8">
-                <Logo />
-                <span className="hidden lg:flex">{sitename}</span>
-              </a>
+              <a className="list-none pb-3 text-gray-500 text-sm sm:text-lg">Home</a>
             </Link>
-            <XIcon onClick={handleModal} className={`w-8 cursor-pointer ${darkScheme ? '' : 'text-gray-400'}`} />
-          </nav>
-          <article className="py-10 grid gap-4">
             {dropdownList.map((list, i) => (
               <div key={i}>
                 <div
                   onClick={() => handleDropdown(i)}
                   className="flex items-center pb-3 cursor-pointer select-none"
                 >
-                  <p>{list.title}</p>
+                  <p
+                    className={`text-gray-500 text-sm sm:text-lg ${
+                      list.title === 'Products' && 'text-blue-600'
+                    }`}
+                  >
+                    {list.title}
+                  </p>
                   <ChevronDownIcon className="w-4 cursor-pointer" />
                 </div>
                 {state.open && state.dropdownToOpen === i && (
                   <div className="pl-5 grid gap-3">
                     {list.listItems.map((item) => (
                       <Link href={item.route} key={item.title}>
-                        <a className="list-none">{item.title}</a>
+                        <a
+                          className={`list-none ${
+                            item.title === 'International Transfers' &&
+                            'text-blue-600'
+                          }`}
+                        >
+                          {item.title}
+                        </a>
                       </Link>
                     ))}
                   </div>
                 )}
               </div>
             ))}
-            <div className="flex flex-col gap-8 pt-8">
-              <button className="button bg-white text-indigo-600">Login</button>
-              <button className="button">Get Started</button>
+            <div className="flex flex-col gap-4">
+              <button className="button bg-white text-indigo-600 max-w-sm border-indigo-600 border-2">Login</button>
+              <button className="button bg-indigo-600 max-w-sm">Get Started</button>
             </div>
           </article>
         </div>

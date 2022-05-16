@@ -33,7 +33,7 @@ export default function Dropdown(props: Props) {
       onClick={handleClick}
       ref={dropdownRef}
       key={i}
-      className="flex-col select-none hidden lg:flex z-50"
+      className="flex-col select-none hidden xl:flex z-50"
     >
       <div className="flex items-center space-x-1 cursor-pointer">
         <span>{list.title}</span>

@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import Layout from '@/components/Layout'
 import { motion } from 'framer-motion'
+
+import Layout from '@/components/Layout'
+import Hero from '@/components/AboutPage/Hero'
+import Banner from '@/components/AboutPage/Banner'
 
 const About: NextPage = () => {
   return (
-    <Layout 
-      title="OnJuno Clone"
-      colorScheme="light"
-    >
+    <Layout title="OnJuno Clone" colorScheme="light">
       <motion.main
         initial="hidden"
         animate="visible"
@@ -23,9 +23,16 @@ const About: NextPage = () => {
           },
         }}
       >
-        <div className="max-w-[1440px] mx-auto">
-          <h1 className='text-center'>Hello About Page!</h1>
-        </div>
+        <main className="pt-20">
+          <Hero />
+          <Banner
+            heading="Our Team"
+            subheading="A collective of engineers, designers, and product thinkers driven by the opportunity to create fairer financial systems"
+          />
+          <section>
+            
+          </section>
+        </main>
       </motion.main>
     </Layout>
   )

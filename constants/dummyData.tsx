@@ -1,3 +1,53 @@
+
+export const homePageDropdownList = [
+  {
+    title: 'Company',
+    listItems: [
+      { title: 'About', route: '/about' },
+      { title: 'Newsroom', route: '/' },
+      { title: 'Careers', route: '/' },
+      { title: 'Legal', route: '/' },
+      { title: 'Community', route: '/' },
+    ],
+  },
+  {
+    title: 'Learn',
+    listItems: [
+      { title: 'Blog', route: '/' },
+      { title: 'Guides', route: '/' },
+      { title: 'Help Center', route: '/' },
+    ],
+  },
+]
+
+export const otherPagesDropdownList = [
+  {
+    title: 'Products',
+    listItems: [
+      { title: 'International Transfers', route: '/' },
+      { title: 'Crypto Paycheck', route: '/' },
+    ],
+  },
+  {
+    title: 'Company',
+    listItems: [
+      { title: 'About', route: '/about' },
+      { title: 'Newsroom', route: '/' },
+      { title: 'Careers', route: '/' },
+      { title: 'Legal', route: '/' },
+      { title: 'Community', route: '/' },
+    ],
+  },
+  {
+    title: 'Learn',
+    listItems: [
+      { title: 'Blog', route: '/' },
+      { title: 'Guides', route: '/' },
+      { title: 'Help Center', route: '/' },
+    ],
+  },
+]
+
 export const hero = {
   heading: 'Crypto Friendly Banking',
   subheading:

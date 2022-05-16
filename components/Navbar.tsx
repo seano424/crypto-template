@@ -1,12 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import { MenuIcon } from '@heroicons/react/solid'
+import { MenuIcon, XIcon } from '@heroicons/react/solid'
 
-import { dropdownList } from 'constants/dropdownList'
+import {
+  homePageDropdownList,
+  otherPagesDropdownList,
+} from 'constants/dummyData'
 import Logo from '../public/svgs/logo.svg'
 import Dropdown from './Dropdown'
-import Modal from './Modal'
+import Modal from './Modals/Modal'
+import HomePageModal from './Modals/HomePageModal'
 
 interface HeaderProps {
   sitename: string
@@ -33,13 +37,13 @@ export default function Navbar(props: HeaderProps) {
 
   return (
     <>
-      <nav className="flex justify-between p-5 lg:p-7 w-full lg:px-56">
+      <nav className="flex justify-between w-full py-5 px-10 xl:px-64">
         <ul className="flex items-center gap-10">
           {darkScheme ? (
             <Link href="/">
-              <a className="flex space-x-2 lg:text-3xl font-bold pr-8">
+              <a className="flex space-x-2 xl:text-3xl font-bold pr-8">
                 <Logo />
-                <span className="hidden lg:flex">{sitename}</span>
+                <span className="hidden xl:flex">{sitename}</span>
               </a>
             </Link>
           ) : (
@@ -55,12 +59,18 @@ export default function Navbar(props: HeaderProps) {
               </a>
             </Link>
           )}
-          {dropdownList.map((list, i) => (
-            <Dropdown key={i} i={i} list={list} />
-          ))}
+          {darkScheme &&
+            homePageDropdownList.map((list, i) => (
+              <Dropdown key={i} i={i} list={list} />
+            ))}
+
+          {!darkScheme &&
+            otherPagesDropdownList.map((list, i) => (
+              <Dropdown key={i} i={i} list={list} />
+            ))}
         </ul>
         <ul className="flex items-center space-x-4">
-          <li className="hidden lg:flex">
+          <li className="hidden xl:flex">
             <button
               className={`button text-indigo-600 bg-white px-8 ${
                 !darkScheme && 'border border-indigo-600'
@@ -79,25 +89,41 @@ export default function Navbar(props: HeaderProps) {
 
           {!darkScheme && (
             <li>
-              <button className="hidden lg:flex button text-sm md:text-base">
+              <button className="hidden xl:flex button text-sm md:text-base">
                 Get Started
               </button>
             </li>
           )}
           <MenuIcon
             onClick={handleModal}
-            className={`lg:hidden cursor-pointer ${
+            className={`xl:hidden cursor-pointer ${
               !darkScheme ? 'text-gray-400 w-7' : 'w-8'
-            }`}
+            } ${isModalOpen && !darkScheme && 'hidden'}`}
           />
+          {!darkScheme && (
+            <XIcon
+              onClick={handleModal}
+              className={`cursor-pointer w-5 text-gray-400 ${
+                isModalOpen && !darkScheme ? 'block' : 'hidden'
+              }`}
+            />
+          )}
         </ul>
       </nav>
-      <Modal
-        isModalOpen={isModalOpen}
-        handleModal={handleModal}
-        sitename={sitename}
-        dropdownList={dropdownList}
-      />
+      {darkScheme && (
+        <HomePageModal
+          isModalOpen={isModalOpen}
+          handleModal={handleModal}
+          sitename={sitename}
+          dropdownList={homePageDropdownList}
+        />
+      )}
+      {!darkScheme && (
+        <Modal
+          isModalOpen={isModalOpen}
+          dropdownList={otherPagesDropdownList}
+        />
+      )}
     </>
   )
 }
