@@ -1,8 +1,12 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import { team } from '@/constants/dummyData'
 
-export default function TeamMembers() {
+interface Props {
+  team: any[]
+}
+
+export default function TeamMembers(props: Props) {
+  const { team } = props
   const [peopleToShow, setPeopleToShow] = useState(4)
 
   return (

@@ -47,7 +47,7 @@ export const otherPagesDropdowns = [
   },
 ]
 
-export const team = [
+export const avatarTeam = [
   {
     name: 'Varun Deshpande',
     image: 'https://cdn.onjuno.com/About/meta/varun-img.png',
@@ -90,52 +90,130 @@ export const team = [
   },
 ]
 
-export const values = [
+export const realTeam = [
   {
-    icon: 'https://cdn.onjuno.com/About/feedback-icon.svg',
-    name: 'Feedback'
+    name: 'Ratnesh Ray',
+    image: 'https://cdn.onjuno.com/About/salil-deshpande.jpg',
+    role: 'Co-Founder',
   },
   {
-    icon: 'https://cdn.onjuno.com/About/empathy-icon.svg',
-    name: 'Empathy'
+    name: 'Permita Chatterjee',
+    image: 'https://cdn.onjuno.com/About/amrish-rau.jpg',
+    role: 'Tech Lead',
   },
   {
-    icon: 'https://cdn.onjuno.com/About/learn-icon.svg',
-    name: 'Learn'
+    name: 'Varun Deshpande',
+    image: 'https://cdn.onjuno.com/About/balaji-srinivasan.jpg',
+    role: 'Co-Founder',
   },
   {
-    icon: 'https://cdn.onjuno.com/About/superhero-icon.svg',
-    name: 'Ownership'
+    name: 'Ratnesh Ray',
+    image: 'https://cdn.onjuno.com/About/salil-deshpande.jpg',
+    role: 'Co-Founder',
   },
   {
-    icon: 'https://cdn.onjuno.com/About/trust-icon.svg',
-    name: 'Trust'
+    name: 'Permita Chatterjee',
+    image: 'https://cdn.onjuno.com/About/amrish-rau.jpg',
+    role: 'Tech Lead',
   },
   {
-    icon: 'https://cdn.onjuno.com/About/transparency-icon.svg',
-    name: 'Transparency'
+    name: 'Varun Deshpande',
+    image: 'https://cdn.onjuno.com/About/balaji-srinivasan.jpg',
+    role: 'Co-Founder',
+  },
+  {
+    name: 'Ratnesh Ray',
+    image: 'https://cdn.onjuno.com/About/salil-deshpande.jpg',
+    role: 'Co-Founder',
+  },
+  {
+    name: 'Permita Chatterjee',
+    image: 'https://cdn.onjuno.com/About/amrish-rau.jpg',
+    role: 'Tech Lead',
   },
 ]
 
-export const workValues = [
-  {
-    icon: 'https://cdn.onjuno.com/About/work-1.svg',
-    heading: 'Learn from personal finance experts',
-  },
-  {
-    icon: 'https://cdn.onjuno.com/About/work-2.svg',
-    heading: 'Top-tier health benefits',
-  },
-  {
-    icon: 'https://cdn.onjuno.com/About/work-3.svg',
-    heading: 'Perks for professional development',
-  },
-  {
-    icon: 'https://cdn.onjuno.com/About/work-4.svg',
-    heading: 'Fitness credit in form of CultFit Vouchers',
-  },
-  {
-    icon: 'https://cdn.onjuno.com/About/work-5.svg',
-    heading: 'Team trips, outings, and hackathons',
-  },
-]
+export const companyValues = {
+  heading: 'Working At Juno',
+  subheading:
+    "We're looking for talented people who are tenacious and passionate about building high quality products that impact the financial futures of millions.",
+  data: [
+    {
+      icon: 'https://cdn.onjuno.com/About/feedback-icon.svg',
+      text: 'Feedback',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/empathy-icon.svg',
+      text: 'Empathy',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/learn-icon.svg',
+      text: 'Learn',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/superhero-icon.svg',
+      text: 'Ownership',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/trust-icon.svg',
+      text: 'Trust',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/transparency-icon.svg',
+      text: 'Transparency',
+    },
+  ],
+}
+
+export const workValues = {
+  heading: 'Working At Juno',
+  subheading:
+    "We're looking for talented people who are tenacious and passionate about building high quality products that impact the financial futures of millions.",
+  data: [
+    {
+      icon: 'https://cdn.onjuno.com/About/work-1.svg',
+      text: 'Learn from personal finance experts',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/work-2.svg',
+      text: 'Top-tier health benefits',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/work-3.svg',
+      text: 'Perks for professional development',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/work-4.svg',
+      text: 'Fitness credit in form of CultFit Vouchers',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/work-5.svg',
+      text: 'Team trips, outings, and hackathons',
+    },
+  ],
+}
+
+export const pressValues = {
+  heading: 'OnJuno in the Press',
+  subheading: 'Praise and support for OnJuno from global media houses.',
+  data: [
+    {
+      icon: 'https://cdn.onjuno.com/About/media-3%403x.png',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/media-1%403x.png',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/media-4%403x.png',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/media-2%403x.png',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/media-6%403x.png',
+    },
+    {
+      icon: 'https://cdn.onjuno.com/About/media-5%403x.png',
+    },
+  ],
+}
