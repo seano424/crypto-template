@@ -3,7 +3,9 @@ import { motion } from 'framer-motion'
 
 import Layout from '@/components/Layout'
 import Hero from '@/components/AboutPage/Hero'
-import Banner from '@/components/AboutPage/Banner'
+import Banner from '@/components/AboutPage/AboutBanner'
+import TeamMembers from '@/components/AboutPage/TeamMembers'
+import Values from '@/components/AboutPage/Values'
 
 const About: NextPage = () => {
   return (
@@ -29,9 +31,8 @@ const About: NextPage = () => {
             heading="Our Team"
             subheading="A collective of engineers, designers, and product thinkers driven by the opportunity to create fairer financial systems"
           />
-          <section>
-            
-          </section>
+          <TeamMembers />
+          <Values />
         </main>
       </motion.main>
     </Layout>

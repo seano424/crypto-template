@@ -1,5 +1,4 @@
-
-export const homePageDropdownList = [
+export const homepageDropdowns = [
   {
     title: 'Company',
     listItems: [
@@ -20,7 +19,7 @@ export const homePageDropdownList = [
   },
 ]
 
-export const otherPagesDropdownList = [
+export const otherPagesDropdowns = [
   {
     title: 'Products',
     listItems: [
@@ -48,49 +47,72 @@ export const otherPagesDropdownList = [
   },
 ]
 
-export const hero = {
-  heading: 'Crypto Friendly Banking',
-  subheading:
-    'Earn, invest and spend both your cash and crypto from one powerful checking account',
-  email: true,
-  subtext: '',
-  backgroundImage: '/images/landing-page.png',
-  backgroundColor: 'black',
-  imageOnHalf: false,
-  imageLarge: true,
-}
+export const team = [
+  {
+    name: 'Varun Deshpande',
+    image: 'https://cdn.onjuno.com/About/meta/varun-img.png',
+    role: 'Co-Founder',
+  },
+  {
+    name: 'Ratnesh Ray',
+    image: 'https://cdn.onjuno.com/About/meta/ratnesh-img.png',
+    role: 'Co-Founder',
+  },
+  {
+    name: 'Permita Chatterjee',
+    image: 'https://cdn.onjuno.com/About/meta/permita-img.png',
+    role: 'Tech Lead',
+  },
+  {
+    name: 'Saloni Miglani',
+    image: 'https://cdn.onjuno.com/About/meta/saloni-img.png',
+    role: 'Content',
+  },
+  {
+    name: 'Varun Deshpande',
+    image: 'https://cdn.onjuno.com/About/meta/varun-img.png',
+    role: 'Co-Founder',
+  },
+  {
+    name: 'Ratnesh Ray',
+    image: 'https://cdn.onjuno.com/About/meta/ratnesh-img.png',
+    role: 'Co-Founder',
+  },
+  {
+    name: 'Permita Chatterjee',
+    image: 'https://cdn.onjuno.com/About/meta/permita-img.png',
+    role: 'Tech Lead',
+  },
+  {
+    name: 'Saloni Miglani',
+    image: 'https://cdn.onjuno.com/About/meta/saloni-img.png',
+    role: 'Content',
+  },
+]
 
-export const cashout = {
-  heading: 'Cashout your crypto instantly',
-  subheading:
-    "Still waiting 7 days to cashout your crypto? Create OnJuno's all-in-one account and cashout from any DeFi wallet at zero fees.",
-  email: false,
-  subtext: 'Create account and cashout in few mins',
-  backgroundImage: '/images/cashout.png',
-  backgroundColor: 'blue',
-  imageOnHalf: true,
-  imageLarge: false,
-}
-
-export const earn = {
-  heading: '',
-  subheading: '',
-  email: true,
-  subtext: '',
-  backgroundImage: '/images/landing-page.png',
-  backgroundColor: 'black',
-  imageOnHalf: true,
-  imageLarge: true,
-}
-
-export const getPaid = {
-  heading: 'Get paid in crypto',
-  subheading:
-    'Set up a direct deposit and receive part of your paycheck in crypto in any wallet of your choice',
-  email: false,
-  subtext: 'Get $100 bonus on your first direct deposit',
-  backgroundImage: '/images/get-paid.png',
-  backgroundColor: 'black',
-  imageOnHalf: false,
-  imageLarge: false,
-}
+export const values = [
+  {
+    icon: 'https://cdn.onjuno.com/About/feedback-icon.svg',
+    name: 'Feedback'
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/empathy-icon.svg',
+    name: 'Empathy'
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/learn-icon.svg',
+    name: 'Learn'
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/superhero-icon.svg',
+    name: 'Ownership'
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/trust-icon.svg',
+    name: 'Trust'
+  },
+  {
+    icon: 'https://cdn.onjuno.com/About/transparency-icon.svg',
+    name: 'Transparency'
+  },
+]

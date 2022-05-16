@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 
 import {
-  homePageDropdownList,
-  otherPagesDropdownList,
+  homepageDropdowns,
+  otherPagesDropdowns,
 } from 'constants/dummyData'
 import Logo from '../public/svgs/logo.svg'
 import Dropdown from './Dropdown'
@@ -60,12 +60,12 @@ export default function Navbar(props: HeaderProps) {
             </Link>
           )}
           {darkScheme &&
-            homePageDropdownList.map((list, i) => (
+            homepageDropdowns.map((list, i) => (
               <Dropdown key={i} i={i} list={list} />
             ))}
 
           {!darkScheme &&
-            otherPagesDropdownList.map((list, i) => (
+            otherPagesDropdowns.map((list, i) => (
               <Dropdown key={i} i={i} list={list} />
             ))}
         </ul>
@@ -115,13 +115,13 @@ export default function Navbar(props: HeaderProps) {
           isModalOpen={isModalOpen}
           handleModal={handleModal}
           sitename={sitename}
-          dropdownList={homePageDropdownList}
+          dropdownList={homepageDropdowns}
         />
       )}
       {!darkScheme && (
         <Modal
           isModalOpen={isModalOpen}
-          dropdownList={otherPagesDropdownList}
+          dropdownList={otherPagesDropdowns}
         />
       )}
     </>

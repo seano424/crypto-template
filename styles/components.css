@@ -10,4 +10,8 @@
   .text-light {
     @apply font-light text-gray-400;
   }
+
+  .para {
+    @apply text-stone-500/80 tracking-wide leading-relaxed text-lg sm:text-2xl font-light;
+  }
 }

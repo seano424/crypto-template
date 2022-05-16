@@ -7,7 +7,7 @@ export default function Hero() {
         <h1 className="text-center font-serif font-medium text-3xl sm:text-5xl lg:max-w-3xl">
           We are a mission driven company
         </h1>
-        <p className="text-slate-400 text-lg sm:text-2xl font-light tracking-wide pb-5 sm:px-40 leading-relaxed">
+        <p className="text-slate-400 text-lg sm:text-2xl font-light tracking-wide pb-5 sm:px-40 md:px-0 leading-relaxed">
           Our goal is to increase financial freedom and provide access to fair
           and transparent financial services
         </p>
