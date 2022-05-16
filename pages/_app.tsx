@@ -1,12 +1,12 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { AnimateSharedLayout } from 'framer-motion'
+import { LayoutGroup } from 'framer-motion'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <AnimateSharedLayout>
+    <LayoutGroup>
       <Component {...pageProps} />
-    </AnimateSharedLayout>
+    </LayoutGroup>
   )
 }
 
