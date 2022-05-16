@@ -17,7 +17,7 @@ export default function Values() {
               key={i}
               className="flex flex-col lg:flex-row gap-3 items-center justify-center lg:justify-start mb-3"
             >
-              <div className="relative h-20 w-20 md:h-12 md:w-12 lg:h-20 lg:w-20">
+              <div className="relative h-20 w-20">
                 <Image
                   src={value.icon}
                   alt="Icon"

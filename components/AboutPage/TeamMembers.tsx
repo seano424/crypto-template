@@ -8,7 +8,7 @@ export default function TeamMembers() {
   return (
     <section className="sm:my-12">
       {/* Large Grid */}
-      <div className="hidden lg:grid grid-cols-4">
+      <div className="hidden md:grid grid-cols-4">
         {team.slice(0, peopleToShow + 16).map((member, i) => (
           <div
             className="flex flex-col items-center justify-center gap-2 my-10"
@@ -53,7 +53,7 @@ export default function TeamMembers() {
       </div>
 
       {/* Small Grid */}
-      <div className="grid grid-cols-2 lg:hidden">
+      <div className="grid grid-cols-2 md:hidden">
         {team.slice(0, peopleToShow).map((member, i) => (
           <div
             className="flex flex-col items-center justify-center gap-2 my-10"
@@ -99,10 +99,10 @@ export default function TeamMembers() {
 
       {/* Large View Button */}
       {peopleToShow + 16 < team.length && (
-        <div className="lg:flex hidden justify-center">
+        <div className="md:flex hidden justify-center">
           <button
             onClick={() => setPeopleToShow(team.length)}
-            className="text-indigo-500 text-xl font-semibold tracking-wide lg:hidden"
+            className="text-indigo-500 text-xl font-semibold tracking-wide md:hidden"
           >
             View More
           </button>
@@ -111,7 +111,7 @@ export default function TeamMembers() {
 
       {/* Small View Button */}
       {peopleToShow < team.length && (
-        <div className="flex lg:hidden justify-center">
+        <div className="flex md:hidden justify-center">
           <button
             onClick={() => setPeopleToShow(team.length)}
             className="text-indigo-500 text-xl font-semibold tracking-wide lg:hidden"
