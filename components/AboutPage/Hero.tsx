@@ -17,6 +17,7 @@ export default function Hero() {
       </div>
       <div className="w-full h-80 lg:h-[650px] relative">
         <Image
+          priority
           className="object-cover"
           src="https://cdn.onjuno.com/About/about-hero-image%402x.jpg"
           alt="About Page Hero Image"
