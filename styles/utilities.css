@@ -1,5 +1,9 @@
 @layer utilities {
-  .container {
-    @apply px-28
+  .py-base {
+    @apply py-6 sm:py-10 md:py-14;
+  }
+
+  .my-base {
+    @apply my-8 sm:my-14 md:my-20;
   }
 }

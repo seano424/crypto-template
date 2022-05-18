@@ -11,7 +11,16 @@
     @apply font-light text-gray-400;
   }
 
-  .para {
-    @apply text-stone-500/80 tracking-wide leading-relaxed text-lg sm:text-2xl font-light;
+  .p {
+    @apply text-stone-500/80 tracking-wide leading-relaxed text-lg md:text-2xl font-light;
   }
+
+  .h1 {
+    @apply text-3xl sm:text-5xl lg:text-7xl font-bold;
+  }
+
+  .h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-serif font-light;
+  }
+
 }

@@ -10,7 +10,7 @@ export default function TeamMembers(props: Props) {
   const [peopleToShow, setPeopleToShow] = useState(4)
 
   return (
-    <section className="sm:my-12">
+    <section className="sm:my-12 container">
       {/* Large Grid */}
       <div className="hidden grid-cols-4 md:grid">
         {team.slice(0, peopleToShow + 16).map((member, i) => (

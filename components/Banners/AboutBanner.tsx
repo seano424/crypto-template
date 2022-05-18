@@ -13,12 +13,12 @@ export default function Banner(props: Props) {
 
   return (
     <section
-      className={`flex flex-col gap-3 text-center my-7 lg:gap-8 ${
-        half ? 'md:text-left md:my-0' : 'px-5 md:my-16 md:px-44'
+      className={`container flex flex-col gap-3 text-center my-7 lg:gap-8 ${
+        half ? 'md:text-left md:my-0' : 'md:my-16 lg:px-56 xl:px-80'
       }`}
     >
-      <h2 className="font-serif font-light text-2xl md:text-3xl lg:text-4xl">{heading}</h2>
-      <p className={`para leading-relaxed`}>{subheading}</p>
+      <h2 className="h2">{heading}</h2>
+      <p className="p">{subheading}</p>
     </section>
   )
 }

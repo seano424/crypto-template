@@ -20,7 +20,7 @@ export default function GridCta(props: Props) {
 
   return (
     <section>
-      <div className="grid gap-10 mx-5 mt-12 px-8 md:grid-cols-2 md:mt-32 md:mx-10 lg:max-w-7xl lg:mx-auto">
+      <div className="container my-base grid gap-10 md:grid-cols-2">
         <div className={`${button && 'flex flex-col gap-10'} lg:pr-20`}>
           <div className="flex flex-col gap-3 text-center my-7 md:text-left md:my-0 lg:gap-8">
             <h2 className="font-serif font-light text-2xl md:text-4xl xl:text-5xl">

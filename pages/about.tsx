@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import Layout from '@/components/Layout'
 import Hero from '@/components/AboutPage/Hero'
-import Banner from '@/components/Banners/AboutBanner'
+import AboutBanner from '@/components/Banners/AboutBanner'
 import TeamMembers from '@/components/AboutPage/TeamMembers'
 import {
   avatarTeam,
@@ -31,21 +31,26 @@ const About: NextPage = () => {
             },
           },
         }}
+        className="xl:mx-40"
       >
         <Hero />
-        <Banner
+        <AboutBanner
           heading="Our Team"
           subheading="A collective of engineers, designers, and product thinkers driven by the opportunity to create fairer financial systems"
         />
         <TeamMembers team={avatarTeam} />
         <GridCta values={companyValues} grid={2} />
         <GridCta values={workValues} grid={1} />
-        <Banner
+        <AboutBanner
           heading="Backed by World-Class Investors"
           subheading="In our mission to build better financial tools, we’re supported by highly regarded investors who’ve previously backed Apple, Paypal, and Youtube."
         />
         <TeamMembers team={realTeam} />
         <GridCta values={pressValues} grid={3} />
+        <AboutBanner
+          heading="Global & Growing"
+          subheading="A global team empowered to solve personal finance."
+        />
       </motion.main>
     </Layout>
   )
