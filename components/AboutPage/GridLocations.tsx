@@ -3,7 +3,7 @@ import { globalOffices } from '@/constants/dummyData'
 
 export default function GridLocations() {
   return (
-    <section className="container grid md:grid-cols-3 my-base">
+    <section className="container grid md:grid-cols-3 my-base mb-40">
       {globalOffices.map((office, i) => (
         <div
           key={i}

@@ -5,17 +5,17 @@ import Layout from '@/components/Layout'
 import Hero from '@/components/AboutPage/Hero'
 import AboutBanner from '@/components/Banners/AboutBanner'
 import TeamMembers from '@/components/AboutPage/TeamMembers'
+import GridCta from '@/components/AboutPage/GridCta'
+import GridLocations from '@/components/AboutPage/GridLocations'
+import EmailBanner from '@/components/AboutPage/EmailBanner'
+
 import {
   avatarTeam,
   companyValues,
   pressValues,
   realTeam,
   workValues,
-  globalOffices,
 } from '@/constants/dummyData'
-import GridCta from '@/components/AboutPage/GridCta'
-import Image from 'next/image'
-import GridLocations from '@/components/AboutPage/GridLocations'
 
 const About: NextPage = () => {
   return (
@@ -34,7 +34,6 @@ const About: NextPage = () => {
             },
           },
         }}
-        className="xl:mx-40"
       >
         <Hero />
         <AboutBanner
@@ -55,6 +54,7 @@ const About: NextPage = () => {
           subheading="A global team empowered to solve personal finance."
         />
         <GridLocations />
+        <EmailBanner />
       </motion.main>
     </Layout>
   )

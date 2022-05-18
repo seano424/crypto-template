@@ -3,18 +3,18 @@ export const homepageDropdowns = [
     title: 'Company',
     listItems: [
       { title: 'About', route: '/about' },
-      { title: 'Newsroom', route: '/' },
-      { title: 'Careers', route: '/' },
-      { title: 'Legal', route: '/' },
-      { title: 'Community', route: '/' },
+      { title: 'Newsroom', route: '/about' },
+      { title: 'Careers', route: '/about' },
+      { title: 'Legal', route: '/about' },
+      { title: 'Community', route: '/about' },
     ],
   },
   {
     title: 'Learn',
     listItems: [
-      { title: 'Blog', route: '/' },
-      { title: 'Guides', route: '/' },
-      { title: 'Help Center', route: '/' },
+      { title: 'Blog', route: '/about' },
+      { title: 'Guides', route: '/about' },
+      { title: 'Help Center', route: '/about' },
     ],
   },
 ]
@@ -24,24 +24,24 @@ export const otherPagesDropdowns = [
     title: 'Products',
     listItems: [
       { title: 'International Transfers', route: '/' },
-      { title: 'Crypto Paycheck', route: '/' },
+      { title: 'Crypto Paycheck', route: '/about' },
     ],
   },
   {
     title: 'Company',
     listItems: [
       { title: 'About', route: '/about' },
-      { title: 'Newsroom', route: '/' },
-      { title: 'Careers', route: '/' },
-      { title: 'Legal', route: '/' },
-      { title: 'Community', route: '/' },
+      { title: 'Newsroom', route: '/about' },
+      { title: 'Careers', route: '/about' },
+      { title: 'Legal', route: '/about' },
+      { title: 'Community', route: '/about' },
     ],
   },
   {
     title: 'Learn',
     listItems: [
-      { title: 'Blog', route: '/' },
-      { title: 'Guides', route: '/' },
+      { title: 'Blog', route: '/about' },
+      { title: 'Guides', route: '/about' },
       { title: 'Help Center', route: '/' },
     ],
   },
@@ -226,7 +226,7 @@ export const globalOffices = [
       line1: '1390 Market St, Suite 200,',
       line2: 'San Francisco, CA',
       line3: '94102, United States',
-    }
+    },
   },
   {
     image: 'https://cdn.onjuno.com/About/sf-unselected.svg',
@@ -235,7 +235,7 @@ export const globalOffices = [
       line1: '1390 Market St, Suite 200,',
       line2: 'San Francisco, CA',
       line3: '94102, United States',
-    }
+    },
   },
   {
     image: 'https://cdn.onjuno.com/About/sf-unselected.svg',
@@ -244,6 +244,6 @@ export const globalOffices = [
       line1: '1390 Market St, Suite 200,',
       line2: 'San Francisco, CA',
       line3: '94102, United States',
-    }
+    },
   },
 ]

@@ -12,7 +12,7 @@
   }
 
   .p {
-    @apply text-stone-500/80 tracking-wide leading-relaxed text-lg md:text-2xl font-light;
+    @apply text-stone-500/90 tracking-wide leading-relaxed text-lg md:text-2xl font-light;
   }
 
   .h1 {
