@@ -43,7 +43,7 @@ export default function CtaMasonryGrid() {
   return (
     <section>
       <Banner header="A complete bank replacement" />
-      <div className="mx-10 mb-10 grid grid-cols-1 md:grid-cols-6 gap-3">
+      <div className="mx-10 mb-10 grid grid-cols-1 gap-3 md:grid-cols-6">
         {ctas.map((cta, index) => (
           <div
             key={index}

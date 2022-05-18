@@ -12,7 +12,7 @@ export default function TeamMembers(props: Props) {
   return (
     <section className="sm:my-12">
       {/* Large Grid */}
-      <div className="hidden md:grid grid-cols-4">
+      <div className="hidden grid-cols-4 md:grid">
         {team.slice(0, peopleToShow + 16).map((member, i) => (
           <div
             className="flex flex-col items-center justify-center gap-2 my-10"
@@ -115,7 +115,7 @@ export default function TeamMembers(props: Props) {
 
       {/* Small View Button */}
       {peopleToShow < team.length && (
-        <div className="flex md:hidden justify-center">
+        <div className="flex justify-center md:hidden">
           <button
             onClick={() => setPeopleToShow(team.length)}
             className="text-indigo-500 text-xl font-semibold tracking-wide lg:hidden"

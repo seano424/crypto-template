@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import Layout from '@/components/Layout'
 import Hero from '@/components/AboutPage/Hero'
-import Banner from '@/components/AboutPage/AboutBanner'
+import Banner from '@/components/Banners/AboutBanner'
 import TeamMembers from '@/components/AboutPage/TeamMembers'
 import {
   avatarTeam,

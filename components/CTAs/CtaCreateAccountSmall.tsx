@@ -10,7 +10,7 @@ export default function CtaCreateAccountSmall() {
           <div className="flex items-center relative">
             <MailIcon className="absolute left-5 w-6 text-black" />
             <input
-              className="button bg-white py-6 pl-16 text-gray-800 placeholder:text-black w-full xl:mr-3 text-base font-light focus:ring-0 outline-none"
+              className="button bg-white py-6 pl-16 text-gray-800 placeholder:text-black w-full text-base font-light focus:ring-0 outline-none xl:mr-3"
               type="text"
               placeholder="Enter Email Address"
             />

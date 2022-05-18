@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Banner from '@/components/AboutPage/AboutBanner'
+import Banner from '@/components/Banners/AboutBanner'
 
 interface Props {
   button?: boolean
@@ -20,9 +20,9 @@ export default function GridCta(props: Props) {
 
   return (
     <section>
-      <div className="grid md:grid-cols-2 gap-10 mx-5 md:mx-10 lg:max-w-7xl lg:mx-auto mt-12 md:mt-32 px-8">
+      <div className="grid gap-10 mx-5 mt-12 px-8 md:grid-cols-2 md:mt-32 md:mx-10 lg:max-w-7xl lg:mx-auto">
         <div className={`${button && 'flex flex-col gap-10'} lg:pr-20`}>
-          <div className="flex flex-col gap-3 lg:gap-8 text-center my-7 md:text-left md:my-0">
+          <div className="flex flex-col gap-3 text-center my-7 md:text-left md:my-0 lg:gap-8">
             <h2 className="font-serif font-light text-2xl md:text-4xl xl:text-5xl">
               {values.heading}
             </h2>
@@ -37,7 +37,7 @@ export default function GridCta(props: Props) {
         {/* grid cols 1 2 or 3 text or no text */}
         <div
           className={`${grid === 2 && 'grid grid-cols-2'} ${
-            grid === 3 && 'grid-cols-2 grid md:grid-cols-3 gap-5'
+            grid === 3 && 'grid-cols-2 grid gap-5 md:grid-cols-3'
           }`}
         >
           {grid === 3 &&
@@ -57,7 +57,7 @@ export default function GridCta(props: Props) {
                 key={i}
                 className={`flex gap-5 mb-10 items-center ${
                   grid === 2 &&
-                  'flex-col lg:flex-row justify-center lg:justify-start'
+                  'flex-col justify-center lg:justify-start lg:flex-row'
                 }`}
               >
                 <div className="relative h-20 w-20">

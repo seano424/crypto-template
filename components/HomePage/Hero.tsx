@@ -3,7 +3,7 @@ import { StarIcon } from '@heroicons/react/solid'
 
 export default function Hero() {
   return (
-    <section className="bg-cover bg-center sm:min-h-[800px] relative flex flex-col-reverse lg:flex-col pt-10">
+    <section className="bg-cover pt-10 bg-center relative flex flex-col-reverse sm:min-h-[800px] lg:flex-col">
       <div className="lg:absolute inset-0">
         <Image
           className="h-full w-full"
@@ -13,15 +13,15 @@ export default function Hero() {
           width={1800}
         />
       </div>
-      <div className="flex flex-col gap-5 text-center lg:text-left w-11/12 md:w-[500px] lg:w-6/12 mx-auto lg:mr-0 lg:ml-24">
-        <h1 className="text-6xl lg:text-8xl font-black lg:px-0 lg:w-80">
+      <div className="flex flex-col gap-5 text-center w-11/12 mx-auto md:w-[500px] lg:w-6/12 lg:mr-0 lg:ml-24 lg:text-left">
+        <h1 className="text-6xl font-black lg:px-0 lg:w-80 lg:text-8xl">
           Some Awesome Website!
         </h1>
-        <p className="text-lg text-gray-300 font-light lg:text-3xl lg:max-w-2xl px-10 lg:px-0">
+        <p className="text-lg text-gray-300 font-light px-10 lg:px-0 lg:text-3xl lg:max-w-2xl">
           Some nice tagline I am woohoo oh yea! Keep it going if ya want yea!
         </p>
         <div className="flex max-w-2xl text-xl font-light">
-          <div className="hidden lg:flex items-center relative flex-1">
+          <div className="hidden items-center relative flex-1 lg:flex">
             <span className="absolute left-5 text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function Hero() {
             Create Account
           </button>
         </div>
-        <div className="flex gap-2 justify-center lg:justify-start items-center">
+        <div className="flex gap-2 justify-center items-center lg:justify-start">
           <p>Excellent</p>
           <div className="flex gap-1 items-center">
             <StarIcon className="w-4 bg-green-500" />

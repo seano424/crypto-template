@@ -37,7 +37,7 @@ export default function CtaGridWithImages() {
               height={150}
               width={150}
             />
-            <p className="lg:max-w-xs mx-auto text-center font-light text-lg lg:text-2xl">
+            <p className="mx-auto text-center font-light text-lg lg:text-2xl lg:max-w-xs">
               {cta.text}
             </p>
           </div>
