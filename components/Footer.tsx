@@ -104,7 +104,7 @@ export default function Footer() {
           src="https://cdn.onjuno.com/on-juno%402x.png"
           alt="Logo Image"
         />
-        <div className="flex">
+        <div className="flex gap-4">
           <Image
             height={50}
             width={150}

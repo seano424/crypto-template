@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Banner from '../Banners/Banner'
+import Banner from '../../Banners/Banner'
 
 export default function CtaJoinCommunity() {
   return (

@@ -13,7 +13,7 @@ export default function Banner(props: Props) {
 
   return (
     <section
-      className={`container flex flex-col gap-3 text-center my-7 lg:gap-8 ${
+      className={`container mx-auto flex flex-col gap-3 text-center my-7 lg:gap-8 ${
         half ? 'md:text-left md:my-0' : 'md:my-16 lg:px-56 xl:px-80'
       }`}
     >

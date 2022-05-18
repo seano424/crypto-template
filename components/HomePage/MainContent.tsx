@@ -1,10 +1,10 @@
 import Hero from './Hero'
-import CtaCardsWithLabelLarge from '../CTAs/CtaCardsWithLabelLarge'
+import CtaCardsWithLabelLarge from './CTAs/CtaCardsWithLabelLarge'
 import AsFeaturedIn from '../Banners/AsFeaturedIn'
-import CtaCustomerCard from '../CTAs/CtaCustomerCard'
-import CtaJoinCommunity from '../CTAs/CtaJoinCommunity'
-import CtaMasonryGrid from '../CTAs/CtaMasonryGrid'
-import CtaGridWithImages from '../CTAs/CtaGridWithImages'
+import CtaCustomerCard from './CTAs/CtaCustomerCard'
+import CtaJoinCommunity from './CTAs/CtaJoinCommunity'
+import CtaMasonryGrid from './CTAs/CtaMasonryGrid'
+import CtaGridWithImages from './CTAs/CtaGridWithImages'
 
 export default function MainContent() {
   return (

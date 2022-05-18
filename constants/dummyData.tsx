@@ -134,7 +134,7 @@ export const realTeam = [
 ]
 
 export const companyValues = {
-  heading: 'Working At Juno',
+  heading: "We're Driven by Our Values",
   subheading:
     "We're looking for talented people who are tenacious and passionate about building high quality products that impact the financial futures of millions.",
   data: [
@@ -217,3 +217,33 @@ export const pressValues = {
     },
   ],
 }
+
+export const globalOffices = [
+  {
+    image: 'https://cdn.onjuno.com/About/sf-unselected.svg',
+    location: 'US Office',
+    address: {
+      line1: '1390 Market St, Suite 200,',
+      line2: 'San Francisco, CA',
+      line3: '94102, United States',
+    }
+  },
+  {
+    image: 'https://cdn.onjuno.com/About/sf-unselected.svg',
+    location: 'US Office',
+    address: {
+      line1: '1390 Market St, Suite 200,',
+      line2: 'San Francisco, CA',
+      line3: '94102, United States',
+    }
+  },
+  {
+    image: 'https://cdn.onjuno.com/About/sf-unselected.svg',
+    location: 'US Office',
+    address: {
+      line1: '1390 Market St, Suite 200,',
+      line2: 'San Francisco, CA',
+      line3: '94102, United States',
+    }
+  },
+]

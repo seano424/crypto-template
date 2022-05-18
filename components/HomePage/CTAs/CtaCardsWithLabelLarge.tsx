@@ -1,4 +1,4 @@
-import Banner from '../Banners/Banner'
+import Banner from '../../Banners/Banner'
 import CtaCardWithLabel from './CtaCardWithLabel'
 
 export default function CtaCardsWithLabelLarge() {

@@ -20,13 +20,13 @@ export default function GridCta(props: Props) {
 
   return (
     <section>
-      <div className="container my-base grid gap-10 md:grid-cols-2">
-        <div className={`${button && 'flex flex-col gap-10'} lg:pr-20`}>
+      <div className="container mx-auto my-base grid gap-10 md:grid-cols-2">
+        <div className={`${button && 'flex flex-col gap-10'} xl:pr-20`}>
           <div className="flex flex-col gap-3 text-center my-7 md:text-left md:my-0 lg:gap-8">
             <h2 className="font-serif font-light text-2xl md:text-4xl xl:text-5xl">
               {values.heading}
             </h2>
-            <p className={`para leading-relaxed`}>{values.subheading}</p>
+            <p className="p">{values.subheading}</p>
           </div>
           {button && (
             <button className="button bg-indigo-600 py-4 w-full lg:w-max lg:px-20">
@@ -46,8 +46,8 @@ export default function GridCta(props: Props) {
                 key={i}
                 src={value.icon}
                 alt="Icon"
-                width={200}
-                height={200}
+                width={250}
+                height={250}
                 className="object-cover"
               />
             ))}
@@ -57,7 +57,7 @@ export default function GridCta(props: Props) {
                 key={i}
                 className={`flex gap-5 mb-10 items-center ${
                   grid === 2 &&
-                  'flex-col justify-center lg:justify-start lg:flex-row'
+                  'flex-col justify-center lg:justify-start xl:flex-row'
                 }`}
               >
                 <div className="relative h-20 w-20">
@@ -70,10 +70,10 @@ export default function GridCta(props: Props) {
                 </div>
                 {value.text && (
                   <p
-                    className={`flex-1 ${
+                    className={`flex-1 h3 ${
                       grid === 2
-                        ? 'text-black font-semibold'
-                        : 'text-gray-600 para pr-5 font-light'
+                        ? 'font-semibold'
+                        : 'font-light'
                     }`}
                   >
                     {value.text}

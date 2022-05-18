@@ -11,8 +11,11 @@ import {
   pressValues,
   realTeam,
   workValues,
+  globalOffices,
 } from '@/constants/dummyData'
 import GridCta from '@/components/AboutPage/GridCta'
+import Image from 'next/image'
+import GridLocations from '@/components/AboutPage/GridLocations'
 
 const About: NextPage = () => {
   return (
@@ -51,6 +54,7 @@ const About: NextPage = () => {
           heading="Global & Growing"
           subheading="A global team empowered to solve personal finance."
         />
+        <GridLocations />
       </motion.main>
     </Layout>
   )
